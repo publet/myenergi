@@ -1,0 +1,164 @@
+// Identity styles for Default Theme
+
+// Colors
+$bgColor: #f2f2f2;
+$color1: #333; 
+//$color2: ;
+//$color3: ;
+$headingColor: $color1; 
+$navColor: #002d65;
+$navFontColor: #fff;
+
+// Type
+$fontBody: 'Open Sans', sans-serif;
+$fontHeading: 'Open Sans', sans-serif;
+$fontSize: 16px;
+$h1Size: 3.75em; // 60px
+$h2Size: 1.5em; // 24px
+$h3Size: 1.3125em; // 21px
+$h4Size: 1.125em; // 18px
+$h5Size: 1.125em; // 18px
+$h6Size: 1.125em; // 18px
+$blockquoteSize: 2em; // 32px
+$lineHeight: 1.5em;
+//$textShadow:;
+
+// Images
+$imageLogo: url(logo.png) no-repeat;
+//$imageBackground:;
+
+// Box styles
+//$borderRadius:;
+//$boxShadow:;
+
+
+// Import partials
+@import 'base';
+@import 'layout';
+@import 'module';
+@import 'state';
+
+
+/* Custom styles */
+// Article container
+article {
+	margin-top: 55px;
+	@include breakpoint(mobile-portrait) {
+		margin-top: 75px;
+	}
+}
+.cover { 
+	.headings {
+		h1 {
+			font-size: 5em;
+			line-height: 1.25em;
+			@include breakpoint(mobile-portrait) {
+				font-size: 2em;
+			}
+		}
+	}
+	.super {
+		font-size: 0.25em;
+	}
+}
+.super {
+	font-size: 0.5em;
+	vertical-align: super;
+}
+h3 {
+	font-size: em(30px);
+	margin: {
+		top: 2em;
+	}
+}
+h3 + .product {
+	margin-top: 15px;
+}
+.product {
+	border-top: 1px solid #ddd;
+	margin-top: 30px;
+	padding-top: 20px;
+	h3 {
+		font-size: em(24px);
+		margin-top: 0.5em;
+	}
+	img {
+		margin-top: 1.35em;
+	}
+	ul {
+		margin-left: 40px;
+		padding-left: 0;
+	}
+}
+.connect-signup {
+	margin: {
+		top: 20px;
+		bottom: 20px;
+	}
+	h3 { 
+		font-size: 1.5em; 
+	}
+	input {
+		box-sizing: border-box;
+		border: 1px solid #ddd;
+		box-shadow: none;
+		font-size: 0.75em;
+		margin: 10px 0 5px 0;
+		padding: 10px;
+		width: 100%;
+	}
+	button {
+		background: #002d65;
+		border: none;
+		border-radius: 3px;
+		box-shadow: none;
+		color: #fff;
+		cursor: pointer;
+		font-size: 0.75em;
+		outline: none;
+		margin-top: 20px;
+		padding: 12px 20px;
+	}
+}
+.connect-share {
+	margin: {
+		top: 15px;
+		bottom: 15px;
+	}
+	h3 { 
+		font-size: 1.5em; 
+		margin-top: 0.5em;
+	}
+	ul {
+		margin: 12px 0 0 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			list-style-type: none;
+			max-width: 50px;
+			text-align: center;
+			a {
+				min-height: 50px;
+				overflow: hidden;
+				text-indent: 150%;
+				white-space: nowrap;
+			}
+		}
+	}
+	.social:before {
+		color: #002d65;
+		font-size: 2.35em;
+		text-indent: 0;
+	}
+}
+.connect-hr {
+	border: {
+		top: 1px solid #ccc;
+		right: none;
+		bottom: none;
+		left: none;
+	}
+	height: 1px;
+	margin-top: 50px;
+}
+
