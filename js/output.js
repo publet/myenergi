@@ -23,6 +23,14 @@ $(document).ready(function() {
     return false;
   });
 
+  // Flexslider
+  $('.flexslider').flexslider({
+    animation: "slide",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+
   var fadeThings = $('.fade');
 
   $(window).scroll(function() {

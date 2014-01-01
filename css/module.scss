@@ -286,12 +286,73 @@ article:first-child {
 	}
 }
 
-// Photo Grid block
+// Photos Grid block 
 .photo-grid-photo {
 	box-sizing: border-box;
 	padding: 10px 0;
 	img {
 		width: 100%;
+	}
+}
+
+// Photos Slideshow block
+@import 'flexslider.css';
+.flexslider {
+	.slide-content {
+		position: absolute;
+		top: 55%;
+		width: 100%;
+	}
+	h2 {
+		color: #fff;
+		font-size: em(42px);
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
+		@include breakpoint(mobile-portrait) {
+			font-size: em(26px);
+		}
+	}
+	p {
+		color: #fff;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
+		@include breakpoint(mobile-portrait) {
+			font-size: em(16px);
+		}
+	}
+}
+.flexslider .slides li {
+	min-height: 300px;
+	overflow: hidden;
+	text-align: center;
+	img {
+		min-height: 350px;
+		min-width: 840px;
+		@include breakpoint(mobile-portrait) {
+			left: 50%;
+			margin-left: -50%;
+		}
+		@include breakpoint(mobile-landscape) {
+			left: inherit;
+			margin-left: 0;
+		}
+	}
+}
+.flex-direction-nav a {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
+}
+.flex-control-paging {
+	li {
+		a {
+			background: rgba($color1, 0.6);
+		}
+		a:hover {
+			background: rgba($color1, 0.8);
+		}
+		a.flex-active {
+			background: rgba($color1, 1);
+		}
 	}
 }
 
