@@ -40,6 +40,13 @@ $imageLogo: url(logo.png) no-repeat;
 
 
 /* Custom styles */
+header h1 {
+	text-indent: 200%;
+	width: 237px;
+	@include breakpoint(mobile-portrait) {
+		background-size: 75%;
+	}
+}
 article {
 	margin-top: 55px;
 	@include breakpoint(mobile-portrait) {
@@ -87,6 +94,7 @@ ul {
 	box-sizing: border-box;
 	li {
 		color: #555;
+		list-style-type: disc;
 	}
 }
 h3 {

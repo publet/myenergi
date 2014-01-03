@@ -628,6 +628,13 @@ footer {
   z-index: 3; }
 
 /* Custom styles */
+header h1 {
+  text-indent: 200%;
+  width: 237px; }
+  @media only screen and (max-width: 767px) {
+    header h1 {
+      background-size: 75%; } }
+
 article {
   margin-top: 55px; }
   @media only screen and (max-width: 767px) {
@@ -665,7 +672,8 @@ hr {
 ul {
   box-sizing: border-box; }
   ul li {
-    color: #555; }
+    color: #555;
+    list-style-type: disc; }
 
 h3 {
   font-size: 1.875em;
