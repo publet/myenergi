@@ -83,6 +83,12 @@ hr {
 	}
 	height: 1px;
 }
+ul {
+	box-sizing: border-box;
+	li {
+		color: #555;
+	}
+}
 h3 {
 	font-size: em(30px);
 	line-height: 1.25em;

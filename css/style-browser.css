@@ -482,8 +482,17 @@ article:first-child {
 
 .flexslider .slide-content {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .flexslider .slide-content {
+      top: 30%; } }
+  @media only screen and (max-width: 767px) {
+    .flexslider .slide-content {
+      top: 20%; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .flexslider .slide-content {
+      top: 30%; } }
 .flexslider h2 {
   color: #fff;
   font-size: 2.625em;
@@ -652,6 +661,11 @@ hr {
   border-bottom: none;
   border-left: none;
   height: 1px; }
+
+ul {
+  box-sizing: border-box; }
+  ul li {
+    color: #555; }
 
 h3 {
   font-size: 1.875em;

@@ -300,8 +300,17 @@ article:first-child {
 .flexslider {
 	.slide-content {
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		width: 100%;
+		@include breakpoint(mobile-landscape) {
+			top: 30%;
+		}
+		@include breakpoint(mobile-portrait) {
+			top: 20%;
+		}
+		@include breakpoint(tablet-portrait) {
+			top: 30%;
+		}
 	}
 	h2 {
 		color: #fff;
