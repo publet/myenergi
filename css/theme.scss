@@ -64,6 +64,12 @@ article {
 	line-height: 1.25em;
 	margin-top: 0;
 }
+.subheading {
+	margin: {
+		top: 2em;
+		bottom: 0.5em;
+	}
+}
 .super {
 	font-size: 0.5em;
 	vertical-align: super;
@@ -106,6 +112,11 @@ h3 + .product {
 	ul {
 		margin-left: 40px;
 		padding-left: 0;
+	}
+}
+.slide-content {
+	.button {
+		font-size: em(14px, 16px);
 	}
 }
 .connect-signup {
