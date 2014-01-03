@@ -306,6 +306,11 @@ article:first-child {
 	h2 {
 		color: #fff;
 		font-size: em(42px);
+		margin: {
+			right: auto;
+			left: auto;
+		}
+		max-width: 800px;
 		text-align: center;
 		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
 		@include breakpoint(mobile-portrait) {
@@ -314,6 +319,13 @@ article:first-child {
 	}
 	p {
 		color: #fff;
+		font-size: em(18px);
+		font-weight: 300;
+		margin: {
+			right: auto;
+			left: auto;
+		}
+		max-width: 800px;
 		text-align: center;
 		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
 		@include breakpoint(mobile-portrait) {

@@ -40,7 +40,6 @@ $imageLogo: url(logo.png) no-repeat;
 
 
 /* Custom styles */
-// Article container
 article {
 	margin-top: 55px;
 	@include breakpoint(mobile-portrait) {
@@ -61,18 +60,37 @@ article {
 		font-size: 0.25em;
 	}
 }
+.heading {
+	line-height: 1.25em;
+	margin-top: 0;
+}
 .super {
 	font-size: 0.5em;
 	vertical-align: super;
 }
+hr {
+	border: {
+		top: 1px solid #ddd;
+		right: none;
+		bottom: none;
+		left: none;
+	}
+	height: 1px;
+}
 h3 {
 	font-size: em(30px);
+	line-height: 1.25em;
 	margin: {
 		top: 2em;
 	}
 }
 h3 + .product {
 	margin-top: 15px;
+}
+.dateline {
+	color: #aaa;
+	font-size: em(14px);
+	margin-top: 0;
 }
 .product {
 	border-top: 1px solid #ddd;
@@ -125,6 +143,7 @@ h3 + .product {
 		top: 15px;
 		bottom: 15px;
 	}
+	min-height: 190px;
 	h3 { 
 		font-size: 1.5em; 
 		margin-top: 0.5em;
@@ -133,22 +152,18 @@ h3 + .product {
 		margin: 12px 0 0 0;
 		padding: 0;
 		li {
-			display: inline-block;
+			display: block;
 			list-style-type: none;
-			max-width: 50px;
-			text-align: center;
 			a {
-				min-height: 50px;
 				overflow: hidden;
-				text-indent: 150%;
 				white-space: nowrap;
 			}
 		}
 	}
 	.social:before {
 		color: #002d65;
-		font-size: 2.35em;
-		text-indent: 0;
+		font-size: 1.3em;
+		margin-top: 2px;
 	}
 }
 .connect-hr {

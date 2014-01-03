@@ -487,6 +487,9 @@ article:first-child {
 .flexslider h2 {
   color: #fff;
   font-size: 2.625em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 767px) {
@@ -494,6 +497,11 @@ article:first-child {
       font-size: 1.625em; } }
 .flexslider p {
   color: #fff;
+  font-size: 1.125em;
+  font-weight: 300;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 767px) {
@@ -626,16 +634,33 @@ article {
 .cover .super {
   font-size: 0.25em; }
 
+.heading {
+  line-height: 1.25em;
+  margin-top: 0; }
+
 .super {
   font-size: 0.5em;
   vertical-align: super; }
 
+hr {
+  border-top: 1px solid #ddd;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  height: 1px; }
+
 h3 {
   font-size: 1.875em;
+  line-height: 1.25em;
   margin-top: 2em; }
 
 h3 + .product {
   margin-top: 15px; }
+
+.dateline {
+  color: #aaa;
+  font-size: 0.875em;
+  margin-top: 0; }
 
 .product {
   border-top: 1px solid #ddd;
@@ -677,7 +702,8 @@ h3 + .product {
 
 .connect-share {
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  min-height: 190px; }
   .connect-share h3 {
     font-size: 1.5em;
     margin-top: 0.5em; }
@@ -685,19 +711,15 @@ h3 + .product {
     margin: 12px 0 0 0;
     padding: 0; }
     .connect-share ul li {
-      display: inline-block;
-      list-style-type: none;
-      max-width: 50px;
-      text-align: center; }
+      display: block;
+      list-style-type: none; }
       .connect-share ul li a {
-        min-height: 50px;
         overflow: hidden;
-        text-indent: 150%;
         white-space: nowrap; }
   .connect-share .social:before {
     color: #002d65;
-    font-size: 2.35em;
-    text-indent: 0; }
+    font-size: 1.3em;
+    margin-top: 2px; }
 
 .connect-hr {
   border-top: 1px solid #ccc;
