@@ -530,8 +530,8 @@ article:first-child {
   overflow: hidden;
   text-align: center; }
   .flexslider .slides li img {
-    min-height: 350px;
-    min-width: 840px; }
+    min-height: 400px;
+    min-width: 960px; }
     @media only screen and (max-width: 767px) {
       .flexslider .slides li img {
         left: 50%;
@@ -715,7 +715,7 @@ h3 + .product {
 
 .align-full {
   display: block;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-right: auto;
   margin-left: auto; }
 

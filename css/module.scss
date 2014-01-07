@@ -355,8 +355,8 @@ article:first-child {
 	overflow: hidden;
 	text-align: center;
 	img {
-		min-height: 350px;
-		min-width: 840px;
+		min-height: 400px;
+		min-width: 960px;
 		@include breakpoint(mobile-portrait) {
 			left: 50%;
 			margin-left: -50%;
