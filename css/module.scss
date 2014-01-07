@@ -306,10 +306,10 @@ article:first-child {
 			top: 30%;
 		}
 		@include breakpoint(mobile-portrait) {
-			top: 20%;
+			top: 15%;
 		}
 		@include breakpoint(tablet-portrait) {
-			top: 30%;
+			top: 25%;
 		}
 	}
 	h2 {
@@ -324,6 +324,10 @@ article:first-child {
 		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
 		@include breakpoint(mobile-portrait) {
 			font-size: em(26px);
+			max-width: 230px;
+		}
+		@include breakpoint(tablet-portrait) {
+			max-width: 650px;
 		}
 	}
 	p {
@@ -339,6 +343,10 @@ article:first-child {
 		text-shadow: 0 1px 1px rgba(0,0,0, 0.6);
 		@include breakpoint(mobile-portrait) {
 			font-size: em(16px);
+			max-width: 230px;
+		}
+		@include breakpoint(tablet-portrait) {
+			max-width: 650px;
 		}
 	}
 }

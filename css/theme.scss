@@ -154,6 +154,19 @@ h3 + .product {
 		font-size: em(14px, 16px);
 	}
 }
+.flex-control-paging {
+	li {
+		a {
+			background: rgba(255,255,255, 0.75);
+		}
+		a:hover {
+			background: rgba(255,255,255, 1);
+		}
+		a.flex-active {
+			background: $color1;
+		}
+	}
+}
 .connect-signup {
 	margin: {
 		top: 20px;

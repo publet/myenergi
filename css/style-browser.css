@@ -489,10 +489,10 @@ article:first-child {
       top: 30%; } }
   @media only screen and (max-width: 767px) {
     .flexslider .slide-content {
-      top: 20%; } }
+      top: 15%; } }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .flexslider .slide-content {
-      top: 30%; } }
+      top: 25%; } }
 .flexslider h2 {
   color: #fff;
   font-size: 2.625em;
@@ -503,7 +503,11 @@ article:first-child {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 767px) {
     .flexslider h2 {
-      font-size: 1.625em; } }
+      font-size: 1.625em;
+      max-width: 230px; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .flexslider h2 {
+      max-width: 650px; } }
 .flexslider p {
   color: #fff;
   font-size: 1.125em;
@@ -515,7 +519,11 @@ article:first-child {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 767px) {
     .flexslider p {
-      font-size: 1em; } }
+      font-size: 1em;
+      max-width: 230px; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .flexslider p {
+      max-width: 650px; } }
 
 .flexslider .slides li {
   min-height: 300px;
@@ -716,6 +724,13 @@ h3 + .product {
 
 .slide-content .button {
   font-size: 0.875em; }
+
+.flex-control-paging li a {
+  background: rgba(255, 255, 255, 0.75); }
+.flex-control-paging li a:hover {
+  background: white; }
+.flex-control-paging li a.flex-active {
+  background: #002d65; }
 
 .connect-signup {
   margin-top: 20px;
