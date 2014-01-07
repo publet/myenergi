@@ -220,9 +220,17 @@ h3 + .product {
 		}
 	}
 	.social:before {
-		color: #002d65;
 		font-size: 1.3em;
 		margin-top: 2px;
+	}
+	.facebook.social:before {
+		color: #3b5998;
+	}
+	.youtube.social:before {
+		color: #bb0000;
+	}
+	.twitter.social:before {
+		color: #00aced;
 	}
 }
 .connect-hr {
