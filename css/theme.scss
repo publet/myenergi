@@ -138,6 +138,17 @@ h3 + .product {
 		padding-left: 0;
 	}
 }
+.align-full {
+	display: block;
+	max-width: 1200px;
+	margin: {
+		right: auto;
+		left: auto;
+	}
+}
+.cover.align-full {
+	max-width: inherit;
+}
 .slide-content {
 	.button {
 		font-size: em(14px, 16px);

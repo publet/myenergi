@@ -482,7 +482,7 @@ article:first-child {
 
 .flexslider .slide-content {
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 100%; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .flexslider .slide-content {
@@ -704,6 +704,15 @@ h3 + .product {
   .product ul {
     margin-left: 40px;
     padding-left: 0; }
+
+.align-full {
+  display: block;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.cover.align-full {
+  max-width: inherit; }
 
 .slide-content .button {
   font-size: 0.875em; }
