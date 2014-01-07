@@ -40,11 +40,18 @@ $imageLogo: url(logo.png) no-repeat;
 
 
 /* Custom styles */
-header h1 {
-	text-indent: 200%;
-	width: 237px;
-	@include breakpoint(mobile-portrait) {
-		background-size: 75%;
+header {
+	h1 {
+		text-indent: 200%;
+		width: 237px;
+		@include breakpoint(mobile-portrait) {
+			background-size: 75%;
+		}
+	}
+	nav.dropdown.active {
+		li a:hover {
+			background: $color1;
+		}
 	}
 }
 article {
@@ -102,6 +109,9 @@ h3 {
 	line-height: 1.25em;
 	margin: {
 		top: 2em;
+	}
+	a {
+		text-decoration: none;
 	}
 }
 h3 + .product {

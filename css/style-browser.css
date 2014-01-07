@@ -634,6 +634,8 @@ header h1 {
   @media only screen and (max-width: 767px) {
     header h1 {
       background-size: 75%; } }
+header nav.dropdown.active li a:hover {
+  background: #002d65; }
 
 article {
   margin-top: 55px; }
@@ -679,6 +681,8 @@ h3 {
   font-size: 1.875em;
   line-height: 1.25em;
   margin-top: 2em; }
+  h3 a {
+    text-decoration: none; }
 
 h3 + .product {
   margin-top: 15px; }
