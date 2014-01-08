@@ -1,6 +1,7 @@
 @import url(glyphicons.css);
 @import url(skeleton.css);
 @import url(flexslider.css);
+@import url(fancybox.css);
 /* Import Theme */
 /* Base.scss */
 body {
@@ -622,6 +623,9 @@ article:first-child {
   @media only screen and (max-width: 767px) {
     .purchase li {
       font-size: 0.8em; } }
+
+body.modal-lock {
+  overflow: hidden; }
 
 footer {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.35)));

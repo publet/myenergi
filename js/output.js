@@ -23,6 +23,19 @@ $(document).ready(function() {
     return false;
   });
 
+  // Fancybox modals
+  $('.modal').fancybox({
+    'type': 'image',
+    onStart: function() {
+        $('body').addClass('modal-lock');
+    },
+    onClosed: function() {
+        $('body').removeClass('modal-lock');
+    },
+    'speedIn': '600',
+    'speedOut': '600'
+  });
+
   // Flexslider
   $('.flexslider').flexslider({
     animation: "slide",
